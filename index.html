@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesedit.css">
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+  <title>MD.NJTANVIR || PORTFOLIO</title>
+  <link rel="icon" href="img/title.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body onload="myFunction()">
+  <div id="Loader"></div>
+  <header class="l-header">
+    <div class="nav_section">
+      <nav class="nav bd-grid">
+        <a href="#" class="nav__logo text-white" style="text-decoration: none;">MD.NJT</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#home" class="nav__link active" style="text-decoration: none;">Home</a>
+            </li>
+            <li class="nav__item"><a href="#about" class="nav__link" style="text-decoration: none;">About</a>
+            </li>
+            <li class="nav__item "><a href="#skills" class="nav__link" style="text-decoration: none;">Skills</a>
+            </li>
+            <li class="nav__item"><a href="#portfolio" class="nav__link" style="text-decoration: none;">Portfolio</a>
+            </li>
+            <li class="nav__item"><a href="#certificate" class="nav__link"
+                style="text-decoration: none;">Certificates</a>
+            </li>
+            <li class="nav__item"><a href="#contact" class="nav__link" style="text-decoration: none;">Contact</a>
+            </li>
+            <div class="btn__container">
+              <button class="btn btn-light">
+                <a href="#contact" class="nav__link" style="text-decoration: none; ">Hire me</a>
+              </button>
+            </div>
+          </ul>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class='bx bx-menu-alt-right'></i>
+        </div>
+  </header>
+
+  <main class="l-main">
+    <!--===== HOME =====-->
+    <section class="home" id="home">
+      <div class="home__container bd-grid">
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
+
+        <!-- scripts -->
+        <script src="particles.js"></script>
+        <script src="app.js"></script>
+
+        <script>
+          var count_particles, stats, update;
+          stats = new Stats;
+          stats.setMode(0);
+          stats.domElement.style.position = 'absolute';
+          stats.domElement.style.left = '0px';
+          stats.domElement.style.top = '0px';
+          document.body.appendChild(stats.domElement);
+          count_particles = document.querySelector('.js-count-particles');
+          update = function () {
+            stats.begin();
+            stats.end();
+            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+              count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+            }
+            requestAnimationFrame(update);
+          };
+          requestAnimationFrame(update);
+        </script>
+
+        <h1 class="home__title"><span>HELLO. </span></h1>
+        <div class="home__scroll">
+          <a href="#about" class="home__scroll-link" style="text-decoration: none;"><i
+              class='bx bx-up-arrow-alt'></i>Scroll down</a>
+        </div>
+      </div>
+      <img src="img/heroimg.jpg" alt="" class="home__img">
+  </main>
+  </section>
+  <!--===== ABOUT =====-->
+  <section class="about section" id="about">
+    <h2 class="section-title">About</h2>
+
+    <div class="about__container bd-grid">
+      <div class="about__img">
+        <img src="img/aboutimg.jpg" alt="">
+      </div>
+
+      <div>
+        <h2 class="about__subtitle">I'am Jawad</h2>
+        <span class="about__profession">Web designer</span>
+        <p class="about__text">Hello I am MD.Nurul Jawad Tanvir .I am a front-end web-developer. I also
+          have knowledge about Microsoft-Word,Excel and Powerpoint.</p>
+
+        <div class="downloadcv__container">
+          <button class="downloadcv"> <a href="#downloadcv" class="downloadnow"
+              style="text-decoration: none;margin-top: 5px;"><i class='bx bxs-download'></i></a> <span class="cv"
+              style="font-size: 18px;margin-left: -3px;">
+              Download cv</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =======SKILLS======= -->
+  <section class="skills section" id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills__container bd-grid">
+      <div class="skills__box">
+        <h3 class="skills__subtitle">My Skills</h3>
+        <span class="skills__name">Web-desing</span>
+        <span class="skills__name">Phython</span>
+        <span class="skills__name">Word</span>
+        <span class="skills__name">Excel</span>
+        <span class="skills__name">Powerpoint</span>
+
+        <h3 class="skills__subtitle">Known</h3>
+        <span class="skills__name">Photography</span>
+        <span class="skills__name">Photoediting</span>
+        <span class="skills__name">Videoediting</span>
+        <span class="skills__name">Logo-desing</span>
+      </div>
+      <div class="skills__img">
+        <h1 class="progressmyskills">Web-desing</h1>
+
+        <p class="progressbarp">HTML</p>
+        <div class="progressbar">
+          <div class="skillss html">90%</div>
+        </div>
+
+        <p class="progressbarpa">CSS</p>
+        <div class="progressbar">
+          <div class="skillss css">80%</div>
+        </div>
+
+        <p class="progressbarpa">JavaScript</p>
+        <div class="progressbar">
+          <div class="skillss js">50%</div>
+        </div>
+
+        <p class="progressbarpa">Scss</p>
+        <div class="progressbar">
+          <div class="skillss php">20%</div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+  </section>
+
+  <!-- ========PORTFOLIO========= -->
+  <section class="portfolio section" id="portfolio">
+    <h2 class="section-title">Portfolio</h2>
+
+    <button class="tablink section-title" onclick="openPage('web-desing', this, )" id="defaultOpen">Projects</button>
+    <button class="tablink section-title" onclick="openPage('Photography', this, )">Clicks</button>
+    <button class="tablink section-title" onclick="openPage('desing', this, )">Desings</button>
+    <div class="portfolio__container bd-grid">
+    </div>
+    <div id="web-desing" class="tabcontent">
+      <div class="portfolio__container bd-grid">
+
+        <div class="portfolio__img">
+          <img src="img/mywed.jpg" alt="" class="webdesing">
+          <div class="portfolio__link">
+            <a href="file:///D:/Web-Development/mywebedit2/myweb/homepage.html" target="_blank"
+              class="portfolio__link-name">Viem
+              details</a>
+          </div>
+        </div>
+        <div class="portfolio__img">
+          <img src="img/page.jpg" alt="" class="webdesing">
+          <div class="portfolio__link">
+            <a href="file:///D:/Web-Development/mywebedit2/assingment1/index.html" target="_blank"
+              class="portfolio__link-name">Viem details</a>
+          </div>
+        </div>
+        <div class="portfolio__img">
+          <img src="img/Jawadrest.jpg" alt="" class="webdesing">
+          <div class="portfolio__link">
+            <a href="file:///D:/Web-Development/mywebedit2/Jawadrest/tanvir3.html" target="_blank"
+              class="portfolio__link-name">Viem details</a>
+          </div>
+        </div>
+
+        <div class="portfolio__img">
+          <img src="img/menu.jpg" alt="" class="webdesing">
+          <div class="portfolio__link">
+            <a href="file:///D:/Web-Development/mywebedit2/menu/manu2.html" target="_blank"
+              class="portfolio__link-name">Viem
+              details</a>
+          </div>
+        </div>
+        <div class="portfolio__img">
+          <img src="img/html5form.jpg" alt="" class="webdesing">
+          <div class="portfolio__link">
+            <a href="file:///D:/Web-Development/mywebedit2/html5loginform/formhtml5.html" target="_blank"
+              class="portfolio__link-name">Viem details</a>
+          </div>
+        </div>
+        <div class="portfolio__img">
+          <img src="img/loginform.jpg" alt="" class="webdesing">
+          <div class="portfolio__link">
+            <a href="file:///D:/Web-Development/mywebedit2/Jawadrest/login.html" target="_blank"
+              class="portfolio__link-name">Viem details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="Photography" class="tabcontent">
+      <div class="portfolio__container bd-grid">
+        <div class="portfolio__img">
+          <img src="img/Photo1.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor webdesing">
+        </div>
+        <div class="portfolio__img">
+          <img src="img/Photo2.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor webdesing">
+        </div>
+        <div class="portfolio__img">
+          <img src="img/Photo3.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow cursor webdesing">
+        </div>
+        <div class="portfolio__img">
+          <img src="img/Photo4.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow cursor webdesing">
+        </div>
+        <div class="portfolio__img">
+          <img src="img/Photo5.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow cursor webdesing">
+        </div>
+        <div class="portfolio__img">
+          <img src="img/Photo6.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow cursor webdesing">
+        </div>
+      </div>
+    </div>
+    <!-- ====Photographydesing===== -->
+    <div id="desing" class="tabcontent">
+      <div class="portfolio__container bd-grid">
+        <div class="portfolio__img">
+          <img src="img/logo1.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow cursor webdesing">
+        </div>
+        <div class="portfolio__img">
+          <img src="img/logo2.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow cursor webdesing">
+        </div>
+        <div class="portfolio__img">
+          <img src="img/logo3.jpg" onclick="openModal();currentSlide(15)" class="hover-shadow cursor webdesing">
+        </div>
+        <div class="portfolio__img">
+          <img src="img/logo4.jpg" onclick="openModal();currentSlide(16)" class="hover-shadow cursor webdesing">
+        </div>
+        <div class="portfolio__img">
+          <img src="img/logo5.jpg" onclick="openModal();currentSlide(17)" class="hover-shadow cursor webdesing">
+        </div>
+        <div class="portfolio__img">
+          <img src="img/logo6.jpg" onclick="openModal();currentSlide(18)" class="hover-shadow cursor webdesing">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--====certificate======-->
+  <section class="certificate section" id="certificate">
+    <h2 class="section-title">Certificates</h2>
+
+    <div class="certificate__container bd-grid row">
+      <div class="certificate__img">
+        <img src="img/webdesing.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor webdesing">
+      </div>
+      <div class="certificate__img ">
+        <img src="img/workexcel.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor webdesing">
+      </div>
+      <div class="certificate__img ">
+        <img src="img/word.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor webdesing">
+      </div>
+      <div class="certificate__img ">
+        <img src="img/alison.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor webdesing">
+      </div>
+      <div class="certificate__img ">
+        <img src="img/brac.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor webdesing">
+      </div>
+      <div class="certificate__img ">
+        <img src="img/org.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor webdesing">
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <img src="img/webdesing_wide.jpg">
+        </div>
+        <div class="mySlides">
+          <img src="img/workexcel_wide.jpg">
+        </div>
+        <div class="mySlides">
+          <img src="img/word_wide.jpg">
+        </div>
+        <div class="mySlides">
+          <img src="img/alison2.jpg">
+        </div>
+        <div class="mySlides">
+          <img src="img/brac_wide.jpg">
+        </div>
+        <div class="mySlides">
+          <img src="img/org_wide.jpg">
+        </div>
+        <div class="mySlides">
+          <img src="img/Photo1_wide.jpg">
+        </div>
+        <div class="mySlides">
+          <img src="img/Photo2_wide.jpg">
+        </div>
+        <div class="mySlides">
+          <img src="img/Photo3_wide.jpg">
+        </div>
+        <div class="mySlides">
+          <img src="img/Photo4_wide.jpg">
+        </div>
+        <div class="mySlides">
+          <img src="img/Photo5_wide.jpg">
+        </div>
+        <div class="mySlides">
+          <img src="img/Photo6_wide.jpg">
+        </div>
+        <div class="mySlides">
+          <img src="img/logo1_wide.jpg">
+        </div>
+        <div class="mySlides">
+          <img src="img/logo2_wide.jpg">
+        </div>
+        <div class="mySlides">
+          <img src="img/logo3_wide.jpg">
+        </div>
+        <div class="mySlides">
+          <img src="img/logo4_wide.jpg">
+        </div>
+        <div class="mySlides">
+          <img src="img/logo5_wide.jpg">
+        </div>
+        <div class="mySlides">
+          <img src="img/logo6_wide.jpg">
+        </div>
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+  </script>
+
+  <!-- =======Contact===== -->
+
+  <section class="contact section" id="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact__container bd-grid">
+      <div class="contact__inputs">
+        <h4 class="contacth4">Feel free to contact with me.</h4>
+        <input type="text" placeholder="You Name" class="contact__input" required>
+        <input type="email" placeholder="Your Email" class="contact__input">
+        <input type="number" placeholder="Your Phone Number" class="contact__input">
+        <textarea name="" id="textareaaa" cols="1" rows="4" placeholder="Type your Message"
+          class="contact__input"></textarea>
+        <input type="submit" value="Submit" class="contact__button">
+      </div>
+      <form action="none" class="contact__form">
+        <div class="contact__info">
+          <span class="contact__text"> <i class='bx bx-envelope'></i> jawadtanvir12@yahoo.com</span><br>
+          <span class="contact__text"><i class='bx bxs-phone-call'></i>+880-1857156070</span>
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe width="470" height="327" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=%20House%20:%2021%20Rd%20No.%201,%20Dhaka%201205&t=&z=11&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              <a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a><br>
+              <style>
+                .mapouter {
+                  position: relative;
+                  text-align: right;
+                  height: 327px;
+                  width: 470px;
+                  width: auto;
+                  border-radius: 100px;
+                }
+              </style>
+
+              <style>
+                .gmap_canvas {
+                  overflow: hidden;
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!--===== FOOTER =====-->
+  <footer class="footer section">
+    <div class="footer__container bd-grid">
+      <div class="footer__data">
+        <h2 class="footer__title">MD.NJT</h2>
+        <p class="footer__text" style="color: #697477;">I am Jawad and this is my personal website.In the uper below I
+          tried my best to tell you about my-self .If you are interested to give me your work ,then</p><i
+          style="font-size: 25px;" class='bx bx-down-arrow-alt'></i>
+        <div class="hire__container">
+          <button class="hire btn-light"><a href="#contact" class="nav__link" style="text-decoration: none; ">Hire
+              me</a></button>
+        </div>
+      </div>
+      <div class="footer__data">
+        <h2 class="footer__title">EXPLORE</h2>
+        <ul>
+          <li><a href="#home" class="footer__link " style="text-decoration: none;">Home</a></li>
+          <li><a href="#about" class="footer__link" style="text-decoration: none;">About</a></li>
+          <li><a href="#skills" class="footer__link" style="text-decoration: none;">Skills</a></li>
+          <li><a href="#portfolio" class="footer__link" style="text-decoration: none;">Portfolio</a></li>
+          <li><a href="#certificate" class="footer__link" style="text-decoration: none;">Certificates</a></li>
+          <li><a href="#contact" class="footer__link" style="text-decoration: none;">Contact</a></li>
+        </ul>
+
+      </div>
+      <div class="footer__data">
+        <h2 class="footer__title">FOLLOW ME.</h2>
+        <a href="https://www.facebook.com/jawad.tanvir.21" class="footer__social" target="_blank"><i
+            class='bx bxl-facebook-circle'></i></a>
+        <a href="https://www.instagram.com/jawadtanvir_____/" class="footer__social" target="_blank"><i
+            class='bx bxl-instagram-alt'></i></a>
+        <a href="#twiter" class="footer__social" target="_blank"><i class='bx bxl-twitter'></i></a>
+      </div>
+    </div>
+    <h4 class="copy">
+      &#169;2023 Jawad. All rights reserved by Jawad. Designed by:Jawad
+      <h4>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="mainedit.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+</body>
+
+</html>

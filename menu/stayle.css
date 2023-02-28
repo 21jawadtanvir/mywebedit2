@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+body{
+ margin: 0%;
+font-family: Arial, Helvetica, sans-serif;
+background-image: url(background2.jpg);
+background-repeat: no-repeat;
+background-size: 100%;
+}
+
+.topnav{
+overflow: hidden;
+
+}
+
+.topnav a{
+float:right;
+border-radius: 8%;
+color:#cc0044;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 18px;
+}
+
+.topnav a:hover{
+background-color:#ff80d5;
+color:#cc00cc;
+}
+.topnav a.active{
+
+    color:#cc0044;
+}
+.topnav a.active:hover{
+    background-color: #ff80d5;
+    color:#cc00cc;
+    border-radius:8%;
+
+}
+
+
+
+
+.p{
+font-size: 160px;
+margin-top: 8%;
+margin-left: 6%;
+padding: 5px 20px;
+font-family: 'Parisienne', cursive;
+color: #cc3300;
+
+
+}
+

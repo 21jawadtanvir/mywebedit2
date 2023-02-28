@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+body{
+  
+    background-image: url(https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzl8fHJlc3R1cmFudHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-size:100%;
+  margin-top:20px;
+  background-repeat: no-repeat;
+ width: auto;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+  
+}
+
+
+.container{
+   margin-top: 200px; 
+  margin: 90px auto;
+  border-radius: 8px;
+  max-width: 600px;
+  padding: 16px;
+  background-color: #f77913d7;
+  color:#8a3301;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.842);
+  }
+
+  input[type=email],input[type=password],input[type=text],input[type=date],input[type=number]{
+    width: 270px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 5px 0 22px 0;
+    border: rgba(255, 255, 255, 0.973);
+    border-radius: 10px;
+    display: inline-block;
+    background: #e0e0d1;
+    font-family: 'Merienda', cursive;
+    }
+    
+    input[type=email]:focus,input[type=password]:focus,input[type=text]:focus,input[type=date]:focus,input[type=number]:focus{
+     background-color: rgba(221, 221, 221, 0.658);
+     outline:none;
+     border: 2px solid rgb(240, 81, 7);
+     border-radius: 10px;
+    }
+    .username{
+      margin-left: 326px;
+      font-family: 'Prata', serif;
+      
+        
+    }
+    .usernama{
+      margin-left: 326px;
+      font-family: 'Prata', serif;
+      
+    }
+    .usernam{
+      margin-left: 320px;
+      font-family: 'Prata', serif;
+    }
+
+    input[type=email],input[type=password],input[type=date]{
+    margin-left: 25px;
+
+
+    }
+    .label{
+      margin-left: 10px;
+      font-family: 'Prata', serif;
+    }
+    input[type=text],input[type=number]{
+      margin-left: 10px;
+
+
+    }
+.next {
+  background-color:rgb(197, 51, 6) ;
+  
+  margin-left:150px;
+  padding: 16px 8px; 
+   border: 10px; 
+  cursor:pointer;
+  width: 270px;
+  border-radius:10px;
+  font-family: 'Kaushan Script', cursive;
+}
+.next a{
+  text-decoration: none;
+  color: rgb(243, 211, 26);
+
+}
+.checkbox{
+     margin-left: 10px;
+}
+.noti{
+  margin-left: 15px;
+  color:#992600 ;
+}
+
+.noti:hover{
+  color: red;
+}
+.terms{
+  text-decoration:none;
+  color: #992600;
+}
+.terms:hover{
+  color:red;
+}
+.policy{
+  text-decoration:none;
+  color:#992600
+}
+.policy:hover{
+  color: red;
+}
+.newacc{
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Satisfy', cursive;
+  letter-spacing: 10px;
+  color: rgb(109, 6, 6);
+
+}
+.pa{
+  /* margin-left: 60px; */
+  text-align: center;
+  color: rgb(192, 6, 6);
+}
+
